@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-trpc-crud-api",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.5.0",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@trpc/client": "^10.45.2",
+    "@trpc/server": "^10.45.2",
+    "nuxt": "^3.12.3",
+    "trpc-nuxt": "^0.10.22",
+    "vue": "latest",
+    "zod": "^3.23.8"
+  }
+}
