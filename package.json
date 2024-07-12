@@ -11,11 +11,16 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@prisma/client": "5.16.2",
+    "@prisma/nuxt": "^0.0.30",
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
     "nuxt": "^3.12.3",
     "trpc-nuxt": "^0.10.22",
     "vue": "latest",
     "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "prisma": "5.16.2"
   }
 }
