@@ -8,3 +8,7 @@ Nuxt.js、TypeScript、Tailwind CSS、tRPC、Prisma、Postgres、Docker
 此外，我对 tRPC 的理解还不到位。
 
 所以，先暂停这个组合的尝试，后面有机会再尝试。
+
+## 2025.1.9
+
+把 Prisma 换成 drizzle
