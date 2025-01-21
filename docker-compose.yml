@@ -1,11 +1,9 @@
-version: "3.9"
-
 services:
   db:
     container_name: db
     image: postgres:12
     ports:
-      - "5432:5432"
+      - "8000:8000"
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres

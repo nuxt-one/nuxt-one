@@ -1,27 +1,28 @@
 {
-  "name": "nuxt-trpc-crud-api",
-  "private": true,
+  "name": "trpc",
   "type": "module",
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@9.15.4",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "^6.12.1",
-    "@prisma/client": "5.17.0",
-    "@prisma/nuxt": "^0.0.30",
+    "@nuxtjs/tailwindcss": "^6.13.1",
+    "@prisma/client": "^6.2.1",
+    "@prisma/nuxt": "^0.2.0",
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
-    "nuxt": "^3.12.3",
+    "nuxt": "^3.15.2",
     "trpc-nuxt": "^0.10.22",
-    "vue": "^3.4.32",
-    "zod": "^3.23.8"
+    "vue": "^3.5.13",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
-    "prisma": "5.17.0"
+    "prisma": "^6.2.1"
   }
 }

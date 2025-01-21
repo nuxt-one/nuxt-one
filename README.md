@@ -1,14 +1,26 @@
-# Nuxt-tRPC-CRUD-API
-Nuxt.js、TypeScript、Tailwind CSS、tRPC、Prisma、Postgres、Docker
+# tRPC
 
-> 目前这种技术栈的组合实现起来，不太幸福！
+The best way to start a full-stack, typesafe Nuxt.js app.
 
-首先，就是 `prisma-nuxt` 这个包本身还有许多问题，实现的过程中，Pirsma 客户端一直失败。另外，nuxt 项目启动的时候，一直报 #imports 错误，我没还有找到怎么解决的办法。
+开始一个全栈、类型安全的 Nuxt.js 应用程序的最佳方式。
 
-此外，我对 tRPC 的理解还不到位。
+> ⚠️ **正在积极开发中**
 
-所以，先暂停这个组合的尝试，后面有机会再尝试。
+## Stack
 
-## 2025.1.9
+- Nuxt.js
+- TypeScript
+- Tailwind CSS
+- tRPC
+- Drizzle
+- Postgres
+- Docker
 
-把 Prisma 换成 drizzle
+## Todo List
+
+- [x] 依赖更新、文档更新
+- [ ] ORM 使用 Drizzle 替换 Prisma
+- [ ] 集成 eslint 、commitlint
+- [ ] 最小 CRUD demo 应用
+- [ ] 单元测试
+- [ ] 全面 docker 化
