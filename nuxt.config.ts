@@ -5,5 +5,8 @@ export default defineNuxtConfig({
   build: {
     transpile: ['trpc-nuxt']
   },
+  future: {
+    compatibilityVersion: 4
+  },
   modules: ["@prisma/nuxt", "@nuxtjs/tailwindcss"],
 })
