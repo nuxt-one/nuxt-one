@@ -13,16 +13,13 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.13.1",
-    "@prisma/client": "^6.2.1",
-    "@prisma/nuxt": "^0.2.0",
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
+    "drizzle-kit": "^0.30.2",
+    "drizzle-orm": "^0.38.4",
     "nuxt": "^3.15.2",
     "trpc-nuxt": "^0.10.22",
     "vue": "^3.5.13",
     "zod": "^3.24.1"
-  },
-  "devDependencies": {
-    "prisma": "^6.2.1"
   }
 }

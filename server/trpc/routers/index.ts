@@ -1,24 +1,11 @@
 import { z } from 'zod'
-import { router, publicProcedure } from '../trpc'
+import { publicProcedure, router } from '../trpc'
 
-const idSchema = z.object({ id: z.string()})
-
-const userSchema = z.object({
-  name: z.string(),
-  email: z.string(), 
-})
-
-const userUpdateSchema = z.object({
-  id: z.string(),
-  name: z.string(),
-  email: z.string(),
-})
+// https://trpc.io/docs/server/merging-routers
+import { helloRouter } from './hello'
 
 export const appRouter = router({
-  //get all users
-  getAll: publicProcedure.query(() => {
-    return prisma.user.findMany()
-  })
+  sayHello: helloRouter,
 })
 
 // export type definition of API

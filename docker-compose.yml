@@ -1,15 +1,16 @@
 services:
-  db:
-    container_name: db
-    image: postgres:12
+  postgres:
+    container_name: trpc
+    image: postgres:latest
     ports:
       - "8000:8000"
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
-      - POSTGRES_DB=postgres
+      - POSTGRES_DB=trpc_db
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
-  pgdata: {}
+  postgres_data:
+    driver: local
