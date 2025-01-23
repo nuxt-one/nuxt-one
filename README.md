@@ -1,4 +1,4 @@
-# tRPC
+# NuxtOne
 
 The best way to start a full-stack, typesafe Nuxt.js app.
 

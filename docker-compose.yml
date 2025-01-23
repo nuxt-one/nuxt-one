@@ -1,13 +1,13 @@
 services:
   postgres:
-    container_name: trpc
+    container_name: nuxtone
     image: postgres:latest
     ports:
       - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
-      - POSTGRES_DB=trpc_db
+      - POSTGRES_DB=nuxtone
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
