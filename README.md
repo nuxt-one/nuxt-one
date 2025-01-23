@@ -19,7 +19,7 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 ## Todo List
 
 - [x] 依赖更新、文档更新
-- [ ] ORM 使用 Drizzle 替换 Prisma
+- [x] ORM 使用 Drizzle 替换 Prisma
 - [ ] 集成 eslint 、commitlint
 - [ ] 最小 CRUD demo 应用
 - [ ] 单元测试

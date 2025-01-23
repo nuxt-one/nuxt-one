@@ -3,7 +3,7 @@ services:
     container_name: trpc
     image: postgres:latest
     ports:
-      - "8000:8000"
+      - "5432:5432"
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
