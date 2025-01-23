@@ -24,3 +24,12 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 - [ ] 最小 CRUD demo 应用
 - [ ] 单元测试
 - [ ] 全面 docker 化
+
+## Credits
+
+- [Create T3 App](https://create.t3.gg/) - The best way to start a full-stack, typesafe Next.js app.
+- [Sidebase](https://sidebase.io/) - The productive way to build fullstack Nuxt 3 applications.
+
+## License
+
+Licensed under the [MIT license](https://github.com/easy-temps/tRPC/blob/main/LICENSE.md).
