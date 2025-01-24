@@ -9,6 +9,9 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
 
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "nuxt-auth-utils",
+  ],
   compatibilityDate: "2025-01-21",
 })
