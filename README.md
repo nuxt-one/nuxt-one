@@ -1,4 +1,4 @@
-# NuxtOne
+# 🏔️ Nuxt One
 
 The best way to start a full-stack, typesafe Nuxt.js app.
 
@@ -8,13 +8,13 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 
 ## Stack
 
-- Nuxt.js
-- TypeScript
-- Tailwind CSS
-- tRPC
-- Drizzle
-- Postgres
-- Docker
+- [Nuxt.js](https://nuxt.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [tRPC](https://trpc.io/)
+- [Drizzle](https://orm.drizzle.team/)
+- [Postgres](https://www.postgresql.org/)
+- [Docker](https://www.docker.com/)
 
 ## Todo List
 
