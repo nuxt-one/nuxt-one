@@ -18,17 +18,30 @@
     "@nuxtjs/tailwindcss": "^6.13.1",
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
-    "drizzle-orm": "^0.38.4",
-    "nuxt": "^3.15.2",
-    "nuxt-auth-utils": "0.5.9",
-    "pg": "^8.13.1",
+    "drizzle-orm": "^0.39.3",
+    "nuxt": "^3.15.4",
+    "nuxt-auth-utils": "0.5.14",
+    "pg": "^8.13.2",
     "trpc-nuxt": "^0.10.22",
     "vue": "^3.5.13",
-    "zod": "^3.24.1"
+    "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@types/pg": "^8.11.10",
-    "drizzle-kit": "^0.30.2",
-    "nuxi": "^3.20.0"
+    "@types/pg": "^8.11.11",
+    "drizzle-kit": "^0.30.4",
+    "nuxi": "^3.21.1"
+  },
+
+  "pnpm":{
+    "allowedDeprecatedVersions": {
+      "glob": "*",
+      "inflight": "1",
+      "@esbuild-kit/core-utils":"3",
+      "@esbuild-kit/esm-loader":"2"
+    }
+  },
+
+  "resolutions": {
+    "vite": "^6.1.0"
   }
 }
