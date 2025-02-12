@@ -12,7 +12,9 @@
     "postinstall": "nuxt prepare",
     "db:generate": "drizzle-kit generate",
     "db:push": "drizzle-kit push",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "commitlint": "commitlint --edit",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.13.1",
@@ -27,21 +29,33 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@commitlint/types": "^19.5.0",
     "@types/pg": "^8.11.11",
     "drizzle-kit": "^0.30.4",
-    "nuxi": "^3.21.1"
+    "nuxi": "^3.21.1",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "^5.7.3",
+    "vue-tsc": "^2.2.0"
   },
-
-  "pnpm":{
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "vue-tsc": "^2.2.0"
+      }
+    },
     "allowedDeprecatedVersions": {
       "glob": "*",
       "inflight": "1",
-      "@esbuild-kit/core-utils":"3",
-      "@esbuild-kit/esm-loader":"2"
+      "@esbuild-kit/core-utils": "3",
+      "@esbuild-kit/esm-loader": "2"
     }
   },
-
   "resolutions": {
     "vite": "^6.1.0"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm commitlint $1"
   }
 }
