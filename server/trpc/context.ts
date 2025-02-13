@@ -1,4 +1,4 @@
-import { inferAsyncReturnType } from '@trpc/server'
+import type { inferAsyncReturnType } from '@trpc/server'
 
 /**
  * Creates context for an incoming request
@@ -6,4 +6,4 @@ import { inferAsyncReturnType } from '@trpc/server'
  */
 export const createContext = () => ({})
 
-export type Context = inferAsyncReturnType<typeof createContext>;
+export type Context = inferAsyncReturnType<typeof createContext>

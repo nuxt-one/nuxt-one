@@ -1,4 +1,6 @@
 export default defineNuxtConfig({
+
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-auth-utils', '@nuxt/eslint'],
   devtools: { enabled: true },
 
   build: {
@@ -8,10 +10,14 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
+  compatibilityDate: '2025-01-21',
 
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "nuxt-auth-utils",
-  ],
-  compatibilityDate: "2025-01-21",
+  eslint: {
+    config: {
+      stylistic: {
+        quotes: 'single',
+        commaDangle: 'never'
+      }
+    }
+  }
 })

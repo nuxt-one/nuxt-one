@@ -5,5 +5,5 @@ import { createContext } from '../../trpc/context'
 // export API handler
 export default createNuxtApiHandler({
   router: appRouter,
-  createContext,
+  createContext
 })

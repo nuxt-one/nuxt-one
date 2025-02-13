@@ -2,10 +2,9 @@
 const { $client } = useNuxtApp()
 
 // 获取用户列表
-const { data: userList, refresh } = await useAsyncData('users', () => 
+const { data: userList, refresh } = await useAsyncData('users', () =>
   $client.users.getAll.query()
 )
-
 
 // 创建用户
 const createUser = async () => {
@@ -21,10 +20,15 @@ const createUser = async () => {
 <template>
   <div>
     <h1>用户列表</h1>
-    <button @click="createUser">创建用户</button>
-    
+    <button @click="createUser">
+      创建用户
+    </button>
+
     <ul>
-      <li v-for="user in userList" :key="user.id">
+      <li
+        v-for="user in userList"
+        :key="user.id"
+      >
         {{ user.name }} - {{ user.email }}
       </li>
     </ul>

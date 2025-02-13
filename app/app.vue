@@ -6,7 +6,9 @@ const { data: hello } = await $client.sayHello.hello.useQuery({ text: 'world' })
 
 <template>
   <div class="flex flex-col items-center justify-center h-screen">
-    <p class="text-2xl font-bold">{{ hello?.greeting }}</p>
+    <p class="text-2xl font-bold">
+      {{ hello?.greeting }}
+    </p>
     <NuxtPage />
   </div>
 </template>

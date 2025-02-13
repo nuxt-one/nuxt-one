@@ -23,10 +23,10 @@ const Configuration: UserConfig = {
         'wip',
         'workflow',
         'types',
-        'release',
-      ],
-    ],
-  },
+        'release'
+      ]
+    ]
+  }
 }
 
 export default Configuration
