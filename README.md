@@ -11,6 +11,7 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 - [Nuxt.js](https://nuxt.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn-vue](https://www.shadcn-vue.com/)
 - [tRPC](https://trpc.io/)
 - [Drizzle](https://orm.drizzle.team/)
 - [Postgres](https://www.postgresql.org/)
@@ -21,7 +22,10 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 - [x] 依赖更新、文档更新
 - [x] ORM 使用 Drizzle 替换 Prisma
 - [x] 集成 eslint 、commitlint
-- [ ] 最小 CRUD demo 应用
+- [ ] 集成 shadcn-vue 组件库
+- [ ] 暗黑（Dark Mode）模式
+- [ ] 国际化支持
+- [ ] Todo 应用演示
 - [ ] 单元测试
 - [ ] 全面 docker 化
 
@@ -29,6 +33,7 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 
 - [Create T3 App](https://create.t3.gg/) - The best way to start a full-stack, typesafe Next.js app.
 - [Sidebase](https://sidebase.io/) - The productive way to build fullstack Nuxt 3 applications.
+- [Atidone](https://github.com/atinux/atidone) - A full-stack application with Auth, SSR and SQL, running on the edge with Nuxt.
 
 ## License
 
