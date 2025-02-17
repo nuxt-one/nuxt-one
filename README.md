@@ -22,8 +22,8 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 - [x] 依赖更新、文档更新
 - [x] ORM 使用 Drizzle 替换 Prisma
 - [x] 集成 eslint 、commitlint
-- [ ] 集成 shadcn-vue 组件库
-- [ ] 暗黑（Dark Mode）模式
+- [x] 集成 shadcn-vue
+- [x] 暗黑（Dark Mode）模式
 - [ ] 国际化支持
 - [ ] Todo 应用演示
 - [ ] 单元测试

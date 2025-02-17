@@ -20,9 +20,10 @@ const createUser = async () => {
 <template>
   <div>
     <h1>用户列表</h1>
-    <button @click="createUser">
+
+    <Button @click="createUser">
       创建用户
-    </button>
+    </Button>
 
     <ul>
       <li
