@@ -24,8 +24,8 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 - [x] 集成 eslint 、commitlint
 - [x] 集成 shadcn-vue
 - [x] 暗黑（Dark Mode）模式
-- [ ] 国际化支持
-- [ ] Todo 应用演示
+- [x] 国际化支持
+- [ ] CRUD 示例
 - [ ] 单元测试
 - [ ] 全面 docker 化
 

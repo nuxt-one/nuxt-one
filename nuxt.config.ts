@@ -1,11 +1,13 @@
-export default defineNuxtConfig({
+import { currentLocales } from './i18n/i18n'
 
+export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-auth-utils',
     '@nuxt/eslint',
     'shadcn-nuxt',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxtjs/i18n'
   ],
 
   devtools: { enabled: true },
@@ -27,6 +29,20 @@ export default defineNuxtConfig({
         commaDangle: 'never'
       }
     }
+  },
+
+  i18n: {
+    lazy: true,
+    locales: currentLocales,
+    defaultLocale: 'zh-CN',
+    strategy: 'no_prefix',
+
+    detectBrowserLanguage: {
+      useCookie: true,
+      fallbackLocale: 'zh-CN'
+    },
+
+    vueI18n: './i18n/i18n.config.ts'
   },
 
   shadcn: {

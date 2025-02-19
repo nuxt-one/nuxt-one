@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/i18n": "^9.2.0",
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
     "class-variance-authority": "^0.7.1",
