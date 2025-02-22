@@ -25,6 +25,7 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 - [x] 集成 shadcn-vue
 - [x] 暗黑（Dark Mode）模式
 - [x] 国际化支持
+- [x] Auth 示例
 - [ ] CRUD 示例
 - [ ] 单元测试
 - [ ] 全面 docker 化

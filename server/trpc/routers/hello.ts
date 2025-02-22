@@ -10,7 +10,7 @@ export const helloRouter = router({
     )
     .query(({ input }) => {
       return {
-        greeting: `hello ${input?.text ?? 'world'}`
+        greeting: `hello ${input?.text ?? 'Nuxt one'}`
       }
     })
 })

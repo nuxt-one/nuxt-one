@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { $client } = useNuxtApp()
 
-const { data: hello } = await $client.sayHello.hello.useQuery({ text: 'world' })
+const { data: hello } = await $client.sayHello.hello.useQuery({ text: 'Nuxt one' })
 </script>
 
 <template>

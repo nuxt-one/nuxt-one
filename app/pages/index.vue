@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { User2 } from 'lucide-vue-next'
+
+const { loggedIn, clear, user } = useUserSession()
 const { $client } = useNuxtApp()
 const { t, locale, setLocale } = useI18n()
 
@@ -21,12 +24,28 @@ const createUser = async () => {
 const switchLanguage = async (lang: 'en-US' | 'zh-CN') => {
   await setLocale(lang)
 }
+
+// 登录
+const loginWithGithub = async () => {
+  try {
+    // 重定向到 GitHub 登录页面
+    await navigateTo('/api/auth/github', {
+      external: true
+    })
+  }
+  catch (error) {
+    console.error('GitHub 登录失败:', error)
+  }
+}
+
+// 登出
+const logout = async () => {
+  await clear()
+}
 </script>
 
 <template>
   <div>
-    <h1>{{ t('userList') }}</h1>
-
     <div class="mb-4">
       <button
         :class="{ 'font-bold': locale === 'en-US' }"
@@ -43,16 +62,31 @@ const switchLanguage = async (lang: 'en-US' | 'zh-CN') => {
       <p>{{ t('welcome') }}</p>
     </div>
 
+    <!-- 根据登录状态显示不同内容 -->
+    <div v-if="loggedIn">
+      <p>欢迎, {{ user?.name }}</p>
+      <Button @click="logout">
+        登出
+      </Button>
+    </div>
+    <div v-else>
+      <Button @click="loginWithGithub">
+        <User2 class="w-4 h-4 mr-2" /> Login with Github
+      </Button>
+    </div>
+
+    <h1>{{ t('userList') }}</h1>
+
     <Button @click="createUser">
       {{ t('createUser') }}
     </Button>
 
     <ul>
       <li
-        v-for="user in userList"
-        :key="user.id"
+        v-for="item in userList"
+        :key="item.id"
       >
-        {{ user.name }} - {{ user.email }}
+        {{ item.name }} - {{ item.email }}
       </li>
     </ul>
   </div>
