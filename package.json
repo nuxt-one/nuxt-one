@@ -65,7 +65,13 @@
       "inflight": "1",
       "@esbuild-kit/core-utils": "3",
       "@esbuild-kit/esm-loader": "2"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "simple-git-hooks",
+      "vue-demi"
+    ]
   },
   "resolutions": {
     "vite": "^6.1.1"
