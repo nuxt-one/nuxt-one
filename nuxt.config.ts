@@ -12,6 +12,10 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
+  colorMode: {
+    classSuffix: ''
+  },
+
   build: {
     transpile: ['trpc-nuxt']
   },

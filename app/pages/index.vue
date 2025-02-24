@@ -59,12 +59,13 @@ const logout = async () => {
       >
         中文
       </button>
-      <p>{{ t('welcome') }}</p>
+      <p>{{ t('welcome') }} {{ user?.name }}</p>
     </div>
+
+    <DarkModeToggle />
 
     <!-- 根据登录状态显示不同内容 -->
     <div v-if="loggedIn">
-      <p>欢迎, {{ user?.name }}</p>
       <Button @click="logout">
         登出
       </Button>
