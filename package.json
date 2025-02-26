@@ -26,14 +26,14 @@
     "@trpc/server": "^10.45.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "drizzle-orm": "^0.39.3",
-    "lucide-vue-next": "^0.475.0",
+    "drizzle-orm": "^0.40.0",
+    "lucide-vue-next": "^0.476.0",
     "nuxt": "^3.15.4",
     "nuxt-auth-utils": "0.5.16",
     "pg": "^8.13.2",
     "radix-vue": "^1.9.16",
-    "shadcn-nuxt": "0.11.3",
-    "tailwind-merge": "^3.0.1",
+    "shadcn-nuxt": "1.0.1",
+    "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
     "trpc-nuxt": "^0.10.22",
     "vue": "^3.5.13",
@@ -48,18 +48,18 @@
     "@nuxt/eslint": "^1.1.0",
     "@nuxtjs/tailwindcss": "^6.13.1",
     "@types/pg": "^8.11.11",
-    "drizzle-kit": "^0.30.4",
-    "eslint": "^9.20.1",
+    "drizzle-kit": "^0.30.5",
+    "eslint": "^9.21.0",
     "lint-staged": "^15.4.3",
     "nuxi": "^3.22.2",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.7.3",
-    "vue-tsc": "^2.2.2"
+    "vue-tsc": "^2.2.4"
   },
   "pnpm": {
     "peerDependencyRules": {
       "allowedVersions": {
-        "vue-tsc": "^2.2.2"
+        "vue-tsc": "^2.2.4"
       }
     },
     "allowedDeprecatedVersions": {
@@ -76,7 +76,7 @@
     ]
   },
   "resolutions": {
-    "vite": "^6.1.1"
+    "vite": "^6.2.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
