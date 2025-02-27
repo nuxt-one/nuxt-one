@@ -1,5 +1,13 @@
 {
-  "welcome": "Welcome",
-  "createUser": "Create User",
-  "userList": "User List"
+  "description": "The best way to start a full-stack, typesafe Nuxt.js app.",
+  "firstSteps": "First Steps",
+  "firstStepsDescription": "Just the basics - Everything you need to know to set up your database and authentication.",
+  "documentation": "Documentation",
+  "documentationDescription": "Learn more about Create Nuxt One, the libraries it uses, and how to deploy it.",
+  "signIn": "Sign in with GitHub",
+  "signOut": "Sign out",
+  "welcome": "Welcome,",
+  "yourMostRecentPost": "Your most recent post ID",
+  "title": "Enter post title...",
+  "submit": "Submit Post"
 }

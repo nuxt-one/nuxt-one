@@ -1,14 +1,26 @@
 <script setup lang="ts">
-const { $client } = useNuxtApp()
+const { locale, t } = useI18n()
 
-const { data: hello } = await $client.sayHello.hello.useQuery({ text: 'Nuxt one' })
+useHead({
+  htmlAttrs: { lang: locale.value },
+  title: 'Nuxt One',
+  meta: [
+    { name: 'description', content: t('description') }
+  ]
+})
+
+useSeoMeta({
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  title: 'Nuxt One',
+  description: 'The best way to start a full-stack, typesafe Nuxt.js app.'
+})
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center h-screen">
-    <p class="text-2xl font-bold">
-      {{ hello?.greeting }}
-    </p>
-    <NuxtPage />
+  <div>
+    <NuxtRouteAnnouncer />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>

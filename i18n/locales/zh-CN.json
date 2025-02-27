@@ -1,6 +1,13 @@
 {
-  "welcome": "欢迎",
-  "createUser": "创建用户",
-  "userList": "用户列表"
+  "description": "开始一个全栈、类型安全的 Nuxt.js 应用程序的最佳方式。",
+  "firstSteps": "开始使用",
+  "firstStepsDescription": "基础入门 - 包含数据库设置和身份认证的所有必要知识。",
+  "documentation": "开发文档",
+  "documentationDescription": "了解更多关于 Create Nuxt One 的信息，包括使用的库和如何部署。",
+  "signIn": "使用 GitHub 登录",
+  "signOut": "退出登录",
+  "welcome": "欢迎，",
+  "yourMostRecentPost": "你最近的帖子 ID",
+  "title": "请输入帖子标题...",
+  "submit": "发布帖子"
 }
-
