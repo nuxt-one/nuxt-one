@@ -25,16 +25,16 @@
     "@tanstack/vue-table": "^8.21.2",
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
-    "@vueuse/core": "^12.7.0",
+    "@vueuse/core": "^12.8.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.40.0",
-    "lucide-vue-next": "^0.476.0",
+    "lucide-vue-next": "^0.477.0",
     "nuxt": "^3.15.4",
     "nuxt-auth-utils": "0.5.16",
     "pg": "^8.13.2",
-    "reka-ui": "^2.0.0",
-    "shadcn-nuxt": "1.0.1",
+    "reka-ui": "^2.0.2",
+    "shadcn-nuxt": "1.0.2",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
     "trpc-nuxt": "^0.10.22",
@@ -53,15 +53,15 @@
     "drizzle-kit": "^0.30.5",
     "eslint": "^9.21.0",
     "lint-staged": "^15.4.3",
-    "nuxi": "^3.22.2",
+    "nuxi": "^3.22.4",
     "simple-git-hooks": "^2.11.1",
-    "typescript": "^5.7.3",
-    "vue-tsc": "^2.2.4"
+    "typescript": "^5.8.2",
+    "vue-tsc": "^2.2.8"
   },
   "pnpm": {
     "peerDependencyRules": {
       "allowedVersions": {
-        "vue-tsc": "^2.2.4"
+        "vue-tsc": "^2.2.8"
       }
     },
     "allowedDeprecatedVersions": {
