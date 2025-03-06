@@ -26,6 +26,23 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-01-21',
 
+  vite: {
+    build: {
+      target: 'esnext'
+    },
+    optimizeDeps: {
+      include: [
+        'lucide-vue-next',
+        'class-variance-authority',
+        '@iconify/vue',
+        '@vueuse/core',
+        'reka-ui',
+        'clsx',
+        'tailwind-merge'
+      ]
+    }
+  },
+
   eslint: {
     config: {
       stylistic: {
