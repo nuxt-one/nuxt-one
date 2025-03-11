@@ -63,7 +63,8 @@ export default defineNuxtConfig({
       fallbackLocale: 'zh-CN'
     },
 
-    vueI18n: './i18n/i18n.config.ts'
+    // Relative to the i18n directory
+    vueI18n: './i18n.config.ts'
   },
 
   shadcn: {
