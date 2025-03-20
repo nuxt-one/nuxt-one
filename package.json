@@ -1,7 +1,7 @@
 {
   "name": "nuxt-one",
   "type": "module",
-  "packageManager": "pnpm@10.6.2",
+  "packageManager": "pnpm@10.6.5",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -21,19 +21,19 @@
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/i18n": "^9.3.1",
+    "@nuxtjs/i18n": "^9.3.2",
     "@tanstack/vue-table": "^8.21.2",
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
     "@vueuse/core": "^13.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "drizzle-orm": "^0.40.0",
-    "lucide-vue-next": "^0.479.0",
-    "nuxt": "^3.16.0",
-    "nuxt-auth-utils": "0.5.16",
-    "pg": "^8.14.0",
-    "reka-ui": "^2.0.2",
+    "drizzle-orm": "^0.40.1",
+    "lucide-vue-next": "^0.483.0",
+    "nuxt": "^3.16.1",
+    "nuxt-auth-utils": "0.5.17",
+    "pg": "^8.14.1",
+    "reka-ui": "^2.1.0",
     "shadcn-nuxt": "1.0.3",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
@@ -53,7 +53,7 @@
     "drizzle-kit": "^0.30.5",
     "eslint": "^9.22.0",
     "lint-staged": "^15.5.0",
-    "nuxi": "^3.23.0",
+    "nuxi": "^3.23.1",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.8.2",
     "vue-tsc": "^2.2.8"
@@ -78,7 +78,7 @@
     ]
   },
   "resolutions": {
-    "vite": "^6.2.1"
+    "vite": "^6.2.2"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
