@@ -64,7 +64,12 @@ export default defineNuxtConfig({
     },
 
     // Relative to the i18n directory
-    vueI18n: './i18n.config.ts'
+    vueI18n: './i18n.config.ts',
+
+    bundle: {
+      // https://github.com/nuxt-modules/i18n/issues/3238#issuecomment-2672492536
+      optimizeTranslationDirective: false
+    }
   },
 
   shadcn: {
