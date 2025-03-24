@@ -1,17 +1,17 @@
 import { z } from 'zod'
-import { publicProcedure, router } from '../trpc'
-import { db } from '../../utils/db'
-import { users } from '../../database/schema'
+import { baseProcedure, createTRPCRouter } from '../init'
+import { db } from '~~/server/utils/db'
+import { users } from '~~/server/database/schema'
 
-export const userRouter = router({
+export const userRouter = createTRPCRouter({
   // 获取所有用户
-  getAll: publicProcedure
+  getAll: baseProcedure
     .query(async () => {
       return await db.select().from(users)
     }),
 
   // 创建用户
-  create: publicProcedure
+  create: baseProcedure
     .input(z.object({
       name: z.string(),
       email: z.string().email()

@@ -1,8 +1,8 @@
 import { z } from 'zod'
-import { publicProcedure, router } from '../trpc'
+import { baseProcedure, createTRPCRouter } from '../init'
 
-export const helloRouter = router({
-  hello: publicProcedure
+export const helloRouter = createTRPCRouter({
+  hello: baseProcedure
     .input(
       z.object({
         text: z.string().nullish()
