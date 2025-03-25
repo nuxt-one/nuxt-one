@@ -15,8 +15,8 @@ importers:
         specifier: ^3.5.2
         version: 3.5.2(magicast@0.3.5)
       '@nuxtjs/i18n':
-        specifier: ^9.3.4
-        version: 9.3.4(@vue/compiler-dom@3.5.13)(eslint@9.23.0(jiti@2.4.2))(magicast@0.3.5)(rollup@4.36.0)(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2))
+        specifier: ^9.4.0
+        version: 9.4.0(@vue/compiler-dom@3.5.13)(eslint@9.23.0(jiti@2.4.2))(magicast@0.3.5)(rollup@4.36.0)(vue@3.5.13(typescript@5.8.2))
       '@tanstack/vue-table':
         specifier: ^8.21.2
         version: 8.21.2(vue@3.5.13(typescript@5.8.2))
@@ -63,8 +63,8 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.17)
       trpc-nuxt:
-        specifier: ^1.0.2
-        version: 1.0.2(@trpc/client@11.0.0(@trpc/server@11.0.0(typescript@5.8.2))(typescript@5.8.2))(@trpc/server@11.0.0(typescript@5.8.2))
+        specifier: ^1.0.3
+        version: 1.0.3(@trpc/client@11.0.0(@trpc/server@11.0.0(typescript@5.8.2))(typescript@5.8.2))(@trpc/server@11.0.0(typescript@5.8.2))
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.8.2)
@@ -1141,9 +1141,9 @@ packages:
   '@nuxtjs/color-mode@3.5.2':
     resolution: {integrity: sha512-cC6RfgZh3guHBMLLjrBB2Uti5eUoGM9KyauOaYS9ETmxNWBMTvpgjvSiSJp1OFljIXPIqVTJ3xtJpSNZiO3ZaA==}
 
-  '@nuxtjs/i18n@9.3.4':
-    resolution: {integrity: sha512-vdCKRWXdzUR4gHAbX2ymvlw49gTb6pQm1BHUT7bNFVPBSMnGjDNXXNikoP0aBKRggD8REB2CnoEu4DzZVjaS+g==}
-    engines: {node: ^14.16.0 || >=16.11.0}
+  '@nuxtjs/i18n@9.4.0':
+    resolution: {integrity: sha512-WREUig3PIdlcd3WbfRtmPx9HoLTUB7vUnbUvPS48O/qebntvAtlJKWjxaaBKpFof1RfbGmvPwtmEt+sYdJ6N3w==}
+    engines: {node: '>=18.12.0'}
 
   '@nuxtjs/tailwindcss@6.13.2':
     resolution: {integrity: sha512-knCmVe1I0div4tWj6f9GRaHX97zqD257gOeG4JIcWsC0yRfoiT34GBAyqK8Sc15qiKKMB/lZK6Z3skQRYRk/1Q==}
@@ -1271,17 +1271,11 @@ packages:
   '@oxc-parser/wasm@0.50.0':
     resolution: {integrity: sha512-be/QsKqtXQbKhnIRzezPrV385L6EVaX1GNAGeaQaT+HX6Lny/SfmFetCrEZCRqn2/cAqo+P5rGDNJzv06dY/vw==}
 
-  '@oxc-parser/wasm@0.53.0':
-    resolution: {integrity: sha512-RqWt/Z8SH9RkE5PBTCre/GczXpM/D8pajshzMiHqTVKyrBtUd7ulL2idYBrceBsK+FQT2XdRTx4cUs7TCRfEGw==}
-
   '@oxc-parser/wasm@0.60.0':
     resolution: {integrity: sha512-Dkf9/D87WGBCW3L0+1DtpAfL4SrNsgeRvxwjpKCtbH7Kf6K+pxrT0IridaJfmWKu1Ml+fDvj+7HEyBcfUC/TXQ==}
 
   '@oxc-project/types@0.50.0':
     resolution: {integrity: sha512-VGV87PmDCGv1D+57iEmIuDoso3ig8d8D4VIK9AS0H7h2aNiRwFoCpVyp01+3jvIuHjPcEM2wbo3NG5EKyfx6Jw==}
-
-  '@oxc-project/types@0.53.0':
-    resolution: {integrity: sha512-8JXXVoHnRLcl6kDBboSfAmAkKeb6PSvSc5qSJxiOFzFx0ZCLAbUDmuwR2hkBnY7kQS3LmNXaONq1BFAmwTyeZw==}
 
   '@oxc-project/types@0.56.5':
     resolution: {integrity: sha512-skY3kOJwp22W4RkaadH1hZ3hqFHjkRrIIE0uQ4VUg+/Chvbl+2pF+B55IrIk2dgsKXS57YEUsJuN6I6s4rgFjA==}
@@ -4919,8 +4913,8 @@ packages:
   tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
 
-  trpc-nuxt@1.0.2:
-    resolution: {integrity: sha512-Lx5zfaFrmakEtWrPwiOITeCmIQ8/KB9KBzEM8wYW09bSaLZJS8Wi8BqP5TskuURWEENaNnDDR95iQ1VCSsmfFA==}
+  trpc-nuxt@1.0.3:
+    resolution: {integrity: sha512-CAO7ZOROKYYlwsCu/jkKyQV1E4hGXLyp+H8OBh93kSithqB68FfZCQKbZMD/6twgBknrYi4LazvOcoieRrNbFQ==}
     peerDependencies:
       '@trpc/client': ^11.0.0
       '@trpc/server': ^11.0.0
@@ -5021,6 +5015,10 @@ packages:
 
   unplugin@2.2.1:
     resolution: {integrity: sha512-Q0YDhwViJaSnHf1cxLf+/VKhmfdr/ZAS/RL2GQVO0cAbAfJAVUef2bvNu+veyWcEPNwsTlFmMiFLjf8Xeqog8g==}
+    engines: {node: '>=18.12.0'}
+
+  unplugin@2.2.2:
+    resolution: {integrity: sha512-Qp+iiD+qCRnUek+nDoYvtWX7tfnYyXsrOnJ452FRTgOyKmTM7TUJ3l+PLPJOOWPTUyKISKp4isC5JJPSXUjGgw==}
     engines: {node: '>=18.12.0'}
 
   unstorage@1.15.0:
@@ -6563,7 +6561,7 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@nuxtjs/i18n@9.3.4(@vue/compiler-dom@3.5.13)(eslint@9.23.0(jiti@2.4.2))(magicast@0.3.5)(rollup@4.36.0)(typescript@5.8.2)(vue@3.5.13(typescript@5.8.2))':
+  '@nuxtjs/i18n@9.4.0(@vue/compiler-dom@3.5.13)(eslint@9.23.0(jiti@2.4.2))(magicast@0.3.5)(rollup@4.36.0)(vue@3.5.13(typescript@5.8.2))':
     dependencies:
       '@intlify/h3': 0.6.1
       '@intlify/shared': 10.0.6
@@ -6571,7 +6569,7 @@ snapshots:
       '@intlify/utils': 0.13.0
       '@miyaneee/rollup-plugin-json5': 1.2.0(rollup@4.36.0)
       '@nuxt/kit': 3.16.1(magicast@0.3.5)
-      '@oxc-parser/wasm': 0.53.0
+      '@oxc-parser/wasm': 0.60.0
       '@rollup/plugin-yaml': 4.1.2(rollup@4.36.0)
       '@vue/compiler-sfc': 3.5.13
       debug: 4.4.0(supports-color@9.4.0)
@@ -6584,8 +6582,9 @@ snapshots:
       mlly: 1.7.4
       oxc-parser: 0.61.2
       pathe: 2.0.3
+      typescript: 5.8.2
       ufo: 1.5.4
-      unplugin: 2.2.1
+      unplugin: 2.2.2
       unplugin-vue-router: 0.12.0(vue-router@4.5.0(vue@3.5.13(typescript@5.8.2)))(vue@3.5.13(typescript@5.8.2))
       vue-i18n: 10.0.6(vue@3.5.13(typescript@5.8.2))
       vue-router: 4.5.0(vue@3.5.13(typescript@5.8.2))
@@ -6596,7 +6595,6 @@ snapshots:
       - petite-vue-i18n
       - rollup
       - supports-color
-      - typescript
       - vue
 
   '@nuxtjs/tailwindcss@6.13.2(magicast@0.3.5)':
@@ -6684,17 +6682,11 @@ snapshots:
     dependencies:
       '@oxc-project/types': 0.50.0
 
-  '@oxc-parser/wasm@0.53.0':
-    dependencies:
-      '@oxc-project/types': 0.53.0
-
   '@oxc-parser/wasm@0.60.0':
     dependencies:
       '@oxc-project/types': 0.60.0
 
   '@oxc-project/types@0.50.0': {}
-
-  '@oxc-project/types@0.53.0': {}
 
   '@oxc-project/types@0.56.5': {}
 
@@ -10567,7 +10559,7 @@ snapshots:
 
   tr46@0.0.3: {}
 
-  trpc-nuxt@1.0.2(@trpc/client@11.0.0(@trpc/server@11.0.0(typescript@5.8.2))(typescript@5.8.2))(@trpc/server@11.0.0(typescript@5.8.2)):
+  trpc-nuxt@1.0.3(@trpc/client@11.0.0(@trpc/server@11.0.0(typescript@5.8.2))(typescript@5.8.2))(@trpc/server@11.0.0(typescript@5.8.2)):
     dependencies:
       '@trpc/client': 11.0.0(@trpc/server@11.0.0(typescript@5.8.2))(typescript@5.8.2)
       '@trpc/server': 11.0.0(typescript@5.8.2)
@@ -10671,7 +10663,7 @@ snapshots:
       mlly: 1.7.4
       pathe: 2.0.3
       scule: 1.3.0
-      unplugin: 2.2.1
+      unplugin: 2.2.2
       unplugin-utils: 0.2.4
       yaml: 2.7.0
     optionalDependencies:
@@ -10685,6 +10677,11 @@ snapshots:
       webpack-virtual-modules: 0.6.2
 
   unplugin@2.2.1:
+    dependencies:
+      acorn: 8.14.1
+      webpack-virtual-modules: 0.6.2
+
+  unplugin@2.2.2:
     dependencies:
       acorn: 8.14.1
       webpack-virtual-modules: 0.6.2
