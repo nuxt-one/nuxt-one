@@ -3,7 +3,6 @@ import { currentLocales } from './i18n/i18n'
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
-    'nuxt-auth-utils',
     '@nuxt/eslint',
     'shadcn-nuxt',
     '@nuxtjs/color-mode',

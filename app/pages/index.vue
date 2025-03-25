@@ -14,22 +14,10 @@ import LanguageSwitcher from '~/components/LanguageToggle.vue'
 import DarkModeToggle from '~/components/DarkModeToggle.vue'
 
 const { t } = useI18n()
-const { loggedIn, clear, user } = useUserSession()
 
-const loginWithGithub = async () => {
-  try {
-    await navigateTo('/api/auth/github', {
-      external: true
-    })
-  }
-  catch (error) {
-    console.error('GitHub 登录失败:', error)
-  }
-}
+const loginWithGithub = async () => {}
 
-const logout = async () => {
-  await clear()
-}
+const logout = async () => {}
 
 const recentPostId = '123'
 const postTitle = ref('')
@@ -88,10 +76,10 @@ const submitPost = () => {
 
       <div class="text-center mb-4">
         <div
-          v-if="loggedIn"
+          v-if="false"
           class="mb-4"
         >
-          <p>{{ t('welcome') }} {{ user?.name }}</p>
+          <p>{{ t('welcome') }}</p>
 
           <Button
             class="mt-2 border py-2 px-6 rounded-full transition"
@@ -115,7 +103,7 @@ const submitPost = () => {
       </div>
 
       <div
-        v-if="loggedIn"
+        v-if="false"
         class="w-full max-w-md"
       >
         <p class="mb-2">
