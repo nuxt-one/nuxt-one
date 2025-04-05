@@ -25,17 +25,11 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 - [x] 集成 shadcn-vue
 - [x] 暗黑（Dark Mode）模式
 - [x] 国际化支持
-- [ ] Tailwind v4
+- [x] Tailwind v4
 - [ ] Better Auth
 - [ ] CRUD 示例
 - [ ] 单元测试
 - [ ] 全面 docker 化
-
-## Credits
-
-- [Create T3 App](https://create.t3.gg/) - The best way to start a full-stack, typesafe Next.js app.
-- [Sidebase](https://sidebase.io/) - The productive way to build fullstack Nuxt 3 applications.
-- [Atidone](https://github.com/atinux/atidone) - A full-stack application with Auth, SSR and SQL, running on the edge with Nuxt.
 
 ## License
 
