@@ -1,15 +1,17 @@
+import tailwindcss from '@tailwindcss/vite'
 import { currentLocales } from './i18n/i18n'
 
 export default defineNuxtConfig({
   modules: [
-    '@nuxtjs/tailwindcss',
     '@nuxt/eslint',
-    'shadcn-nuxt',
     '@nuxtjs/color-mode',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    'shadcn-nuxt'
   ],
 
   devtools: { enabled: true },
+
+  css: ['~/assets/css/tailwind.css'],
 
   colorMode: {
     classSuffix: ''
@@ -26,17 +28,20 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-01-21',
 
   vite: {
+    plugins: [
+      tailwindcss()
+    ],
     build: {
       target: 'esnext'
     },
     optimizeDeps: {
       include: [
         'lucide-vue-next',
-        'class-variance-authority',
         '@iconify/vue',
         '@vueuse/core',
-        'reka-ui',
         'clsx',
+        'class-variance-authority',
+        'reka-ui',
         'tailwind-merge'
       ]
     }
