@@ -2,7 +2,7 @@
 import { User2, ArrowRight } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-
+import { authClient } from '@/lib/auth-client'
 import {
   Card,
   CardContent,
@@ -13,11 +13,19 @@ import {
 import LanguageSwitcher from '~/components/LanguageToggle.vue'
 import DarkModeToggle from '~/components/DarkModeToggle.vue'
 
+const session = authClient.useSession()
+
 const { t } = useI18n()
 
-const loginWithGithub = async () => {}
+const loginWithGithub = async () => {
+  authClient.signIn.social({
+    provider: 'github'
+  })
+}
 
-const logout = async () => {}
+const logout = async () => {
+  authClient.signOut()
+}
 
 const recentPostId = '123'
 const postTitle = ref('')
@@ -76,7 +84,7 @@ const submitPost = () => {
 
       <div class="text-center mb-4">
         <div
-          v-if="false"
+          v-if="session?.data"
           class="mb-4"
         >
           <p>{{ t('welcome') }}</p>
@@ -103,7 +111,7 @@ const submitPost = () => {
       </div>
 
       <div
-        v-if="false"
+        v-if="session?.data"
         class="w-full max-w-md"
       >
         <p class="mb-2">

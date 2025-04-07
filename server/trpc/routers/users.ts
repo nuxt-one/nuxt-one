@@ -1,13 +1,13 @@
 import { z } from 'zod'
 import { baseProcedure, createTRPCRouter } from '../init'
 import { db } from '~~/server/utils/db'
-import { users } from '~~/server/database/schema'
+import { user } from '~~/server/database/schema'
 
 export const userRouter = createTRPCRouter({
   // 获取所有用户
   getAll: baseProcedure
     .query(async () => {
-      return await db.select().from(users)
+      return await db.select().from(user)
     }),
 
   // 创建用户
@@ -20,10 +20,13 @@ export const userRouter = createTRPCRouter({
       try {
         console.log('开始创建用户，输入数据:', input)
 
-        const result = await db.insert(users).values({
+        const result = await db.insert(user).values({
           name: input.name,
-          email: input.email
-          // createdAt 字段会自动设置，因为我们在 schema 中设置了 defaultNow()
+          email: input.email,
+          id: crypto.randomUUID(),
+          emailVerified: false,
+          createdAt: new Date(),
+          updatedAt: new Date()
         }).returning()
 
         console.log('用户创建成功:', result)
