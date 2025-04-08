@@ -11,7 +11,8 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 - [Nuxt.js](https://nuxt.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [shadcn-vue](https://www.shadcn-vue.com/)
+- [Shadcn Vue](https://www.shadcn-vue.com/)
+- [Better Auth](https://better-auth.com/)
 - [tRPC](https://trpc.io/)
 - [Drizzle](https://orm.drizzle.team/)
 - [Postgres](https://www.postgresql.org/)
@@ -27,9 +28,8 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 - [x] 国际化支持
 - [x] Tailwind v4
 - [x] Better Auth
-- [ ] CRUD 示例
-- [ ] 单元测试
-- [ ] 全面 docker 化
+- [ ] 单元测试（TDD）
+- [ ] 创建帖子示例
 
 ## License
 
