@@ -14,25 +14,23 @@ import LanguageSwitcher from '~/components/LanguageToggle.vue'
 import DarkModeToggle from '~/components/DarkModeToggle.vue'
 
 const session = authClient.useSession()
-
 const { t } = useI18n()
+const recentPostId = '123'
+const postTitle = ref('')
 
-const loginWithGithub = async () => {
+function submitPost() {
+  console.log('提交帖子:', postTitle.value)
+  postTitle.value = ''
+}
+
+function loginWithGithub() {
   authClient.signIn.social({
     provider: 'github'
   })
 }
 
-const logout = async () => {
+function logout() {
   authClient.signOut()
-}
-
-const recentPostId = '123'
-const postTitle = ref('')
-
-const submitPost = () => {
-  console.log('提交帖子:', postTitle.value)
-  postTitle.value = ''
 }
 </script>
 
@@ -87,7 +85,7 @@ const submitPost = () => {
           v-if="session?.data"
           class="mb-4"
         >
-          <p>{{ t('welcome') }}</p>
+          <p>{{ t('welcome') }} {{ session?.data?.user?.name }}</p>
 
           <Button
             class="mt-2 border py-2 px-6 rounded-full transition"
