@@ -26,11 +26,11 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 - [x] 暗黑（Dark Mode）模式
 - [x] 国际化支持
 - [x] Tailwind v4
-- [ ] Better Auth
+- [x] Better Auth
 - [ ] CRUD 示例
 - [ ] 单元测试
 - [ ] 全面 docker 化
 
 ## License
 
-Licensed under the [MIT license](https://github.com/easy-temps/tRPC/blob/main/LICENSE.md).
+Licensed under the [MIT license](https://github.com/easy-temps/nuxt-one/blob/main/LICENSE).
