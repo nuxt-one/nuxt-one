@@ -42,7 +42,8 @@ export default defineNuxtConfig({
         'clsx',
         'class-variance-authority',
         'reka-ui',
-        'tailwind-merge'
+        'tailwind-merge',
+        'better-auth/vue'
       ]
     }
   },
