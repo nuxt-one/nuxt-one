@@ -2,7 +2,7 @@
 import { User2, ArrowRight } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-
+import { authClient } from '@/lib/auth-client'
 import {
   Card,
   CardContent,
@@ -13,18 +13,24 @@ import {
 import LanguageSwitcher from '~/components/LanguageToggle.vue'
 import DarkModeToggle from '~/components/DarkModeToggle.vue'
 
+const session = authClient.useSession()
 const { t } = useI18n()
-
-const loginWithGithub = async () => {}
-
-const logout = async () => {}
-
 const recentPostId = '123'
 const postTitle = ref('')
 
-const submitPost = () => {
+function submitPost() {
   console.log('提交帖子:', postTitle.value)
   postTitle.value = ''
+}
+
+function loginWithGithub() {
+  authClient.signIn.social({
+    provider: 'github'
+  })
+}
+
+function logout() {
+  authClient.signOut()
 }
 </script>
 
@@ -76,10 +82,10 @@ const submitPost = () => {
 
       <div class="text-center mb-4">
         <div
-          v-if="false"
+          v-if="session?.data"
           class="mb-4"
         >
-          <p>{{ t('welcome') }}</p>
+          <p>{{ t('welcome') }} {{ session?.data?.user?.name }}</p>
 
           <Button
             class="mt-2 border py-2 px-6 rounded-full transition"
@@ -103,7 +109,7 @@ const submitPost = () => {
       </div>
 
       <div
-        v-if="false"
+        v-if="session?.data"
         class="w-full max-w-md"
       >
         <p class="mb-2">
