@@ -28,8 +28,7 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 - [x] 国际化支持
 - [x] Tailwind v4
 - [x] Better Auth
-- [ ] 单元测试（TDD）
-- [ ] 创建帖子示例
+- [ ] tRPC 示例
 
 ## License
 
