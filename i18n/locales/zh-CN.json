@@ -7,7 +7,10 @@
   "signIn": "使用 GitHub 登录",
   "signOut": "退出登录",
   "welcome": "欢迎，",
-  "yourMostRecentPost": "你最近的帖子 ID",
+  "yourMostRecentPost": "你最近的帖子",
   "title": "请输入帖子标题...",
-  "submit": "发布帖子"
+  "submit": "发布帖子",
+  "processing": "发布中...",
+  "unauthorized": "用户未登录",
+  "serverResponse": "成功"
 }

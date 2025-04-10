@@ -3,35 +3,65 @@ import { User2, ArrowRight } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { authClient } from '@/lib/auth-client'
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle
-} from '@/components/ui/card'
-
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import LanguageSwitcher from '~/components/LanguageToggle.vue'
 import DarkModeToggle from '~/components/DarkModeToggle.vue'
 
-const session = authClient.useSession()
 const { t } = useI18n()
-const recentPostId = '123'
-const postTitle = ref('')
+const { $trpc } = useNuxtApp()
+const session = authClient.useSession()
 
-function submitPost() {
-  console.log('提交帖子:', postTitle.value)
-  postTitle.value = ''
+const loading = ref(false)
+const postTitle = ref('')
+const recentPost = ref<{ id: string, name: string } | null>(null)
+
+// Get the latest post of the user
+async function handleFetchPost() {
+  try {
+    recentPost.value = await $trpc.post.getMyLatest.query()
+  }
+  catch (error) {
+    console.error(error)
+  }
 }
 
-function loginWithGithub() {
+// Create a new post
+async function handleCreatePost() {
+  try {
+    loading.value = true
+    await $trpc.post.create.mutate({
+      name: postTitle.value
+    })
+
+    postTitle.value = ''
+    await handleFetchPost()
+  }
+  catch (error) {
+    console.error(error)
+  }
+  finally {
+    loading.value = false
+  }
+}
+
+function handleLogin() {
   authClient.signIn.social({
     provider: 'github'
   })
 }
 
-function logout() {
+function handleLogout() {
   authClient.signOut()
 }
+
+watchEffect(() => {
+  if (session.value?.data) {
+    handleFetchPost()
+  }
+  else {
+    recentPost.value = null
+  }
+})
 </script>
 
 <template>
@@ -89,7 +119,7 @@ function logout() {
 
           <Button
             class="mt-2 border py-2 px-6 rounded-full transition"
-            @click="logout"
+            @click="handleLogout"
           >
             {{ t('signOut') }}
           </Button>
@@ -101,7 +131,7 @@ function logout() {
         >
           <Button
             class="border py-2 px-6 rounded-full flex items-center justify-center transition"
-            @click="loginWithGithub"
+            @click="handleLogin"
           >
             <User2 class="w-4 h-4 mr-2" /> {{ t('signIn') }}
           </Button>
@@ -113,11 +143,12 @@ function logout() {
         class="w-full max-w-md"
       >
         <p class="mb-2">
-          {{ t('yourMostRecentPost') }}: {{ recentPostId }}
+          <span class="text-gray-500 dark:text-gray-400">{{ t('yourMostRecentPost') }}: </span>
+          <span>{{ recentPost?.name }}</span>
         </p>
 
         <Input
-          v-model="postTitle"
+          v-model.trim="postTitle"
           type="text"
           class="w-full p-3 rounded-lg border mb-3 placeholder-gray-400"
           :placeholder="t('title')"
@@ -125,9 +156,11 @@ function logout() {
 
         <Button
           class="w-full border py-2 px-4 rounded-lg transition"
-          @click="submitPost"
+          :disabled="loading || !postTitle"
+          @click="handleCreatePost"
         >
-          {{ t('submit') }}
+          <span v-if="loading">{{ t('processing') }}</span>
+          <span v-else>{{ t('submit') }}</span>
         </Button>
       </div>
     </div>

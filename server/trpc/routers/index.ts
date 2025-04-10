@@ -1,11 +1,11 @@
 // https://trpc.io/docs/server/merging-routers
 import { createTRPCRouter } from '../init'
 import { helloRouter } from './hello'
-import { userRouter } from './users'
+import { postRouter } from './post'
 
 export const appRouter = createTRPCRouter({
   sayHello: helloRouter,
-  users: userRouter
+  post: postRouter
 })
 
 // export type definition of API

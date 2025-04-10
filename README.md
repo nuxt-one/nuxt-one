@@ -28,8 +28,9 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 - [x] 国际化支持
 - [x] Tailwind v4
 - [x] Better Auth
-- [ ] tRPC 示例
+- [x] tRPC 示例
 
 ## License
 
 Licensed under the [MIT license](https://github.com/easy-temps/nuxt-one/blob/main/LICENSE).
+
