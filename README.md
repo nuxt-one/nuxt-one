@@ -1,36 +1,31 @@
-# 🏔️ Nuxt One
+<p align="center">
+ <h1 align="center">
+   🏔️ Nuxt One
+ </h1>
+</p>
 
 The best way to start a full-stack, typesafe Nuxt.js app.
 
-开始一个全栈、类型安全的 Nuxt.js 应用程序的最佳方式。
+<img src="https://cdn.jsdelivr.net/gh/CharleeWa/static/og.png" alt="og" />
 
-> ⚠️ **正在积极开发中**
+## Documentation
 
-## Stack
+Coming soon ~ 
 
-- [Nuxt.js](https://nuxt.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Shadcn Vue](https://www.shadcn-vue.com/)
-- [Better Auth](https://better-auth.com/)
-- [tRPC](https://trpc.io/)
-- [Drizzle](https://orm.drizzle.team/)
-- [Postgres](https://www.postgresql.org/)
-- [Docker](https://www.docker.com/)
+## Stacks
 
-## Todo List
+Thanks to all these amazing technologies powering this project.
 
-- [x] 依赖更新、文档更新
-- [x] ORM 使用 Drizzle 替换 Prisma
-- [x] 集成 eslint 、commitlint
-- [x] 集成 shadcn-vue
-- [x] 暗黑（Dark Mode）模式
-- [x] 国际化支持
-- [x] Tailwind v4
-- [x] Better Auth
-- [x] tRPC 示例
+- [Nuxt.js](https://nuxt.com/) - Powerful full-stack framework with server-side rendering.
+- [TypeScript](https://www.typescriptlang.org/) - Type safety for improved code quality.
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS for rapid UI development.
+- [Shadcn Vue](https://www.shadcn-vue.com/) - Beautiful, customizable UI components.
+- [Better Auth](https://better-auth.com/) - Simplified authentication implementation.
+- [tRPC](https://trpc.io/) - End-to-end typesafe API calls.
+- [Drizzle](https://orm.drizzle.team/) - Lightweight and efficient ORM solution.
+- [Postgres](https://www.postgresql.org/) - Reliable relational database.
+- [Docker](https://www.docker.com/) - Consistent development environments and deployment.
 
 ## License
 
 Licensed under the [MIT license](https://github.com/easy-temps/nuxt-one/blob/main/LICENSE).
-
