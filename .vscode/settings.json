@@ -13,5 +13,12 @@
   ],
 
   "i18n-ally.sourceLanguage": "zh-CN",
-  "i18n-ally.displayLanguage": "zh-CN"
+  "i18n-ally.displayLanguage": "zh-CN",
+
+  // Markdownlint rules
+  "markdownlint.config": {
+    "default": true,
+    "MD033": false,
+    "MD041": false
+  }
 }

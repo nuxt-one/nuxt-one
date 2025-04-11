@@ -1,12 +1,15 @@
-# 🏔️ Nuxt One
+<p align="center">
+ <img align="center" src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/logo.png" height="70" alt="logo"/>
+ <h1 align="center">Nuxt One</h1>
+</p>
 
 The best way to start a full-stack, typesafe Nuxt.js app.
 
-<img src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/og.png" alt="og" />
+![hero](https://cdn.jsdelivr.net/gh/easy-temps/easy-static/og.png)
 
 ## Documentation
 
-Coming soon ~ 
+Coming soon ~
 
 ## Stacks
 
@@ -20,6 +23,7 @@ Thanks to all these amazing technologies powering this project.
 - [tRPC](https://trpc.io/) end-to-end typesafe API calls.
 - [Drizzle](https://orm.drizzle.team/) lightweight and efficient ORM solution.
 - [Postgres](https://www.postgresql.org/) reliable relational database.
+
 - [Docker](https://www.docker.com/) consistent development environments and deployment.
 
 ## License
