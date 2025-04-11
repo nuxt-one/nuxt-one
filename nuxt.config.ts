@@ -65,6 +65,7 @@ export default defineNuxtConfig({
 
     detectBrowserLanguage: {
       useCookie: true,
+      cookieKey: 'i18n_locale',
       fallbackLocale: 'zh-CN'
     },
 
@@ -74,6 +75,10 @@ export default defineNuxtConfig({
     bundle: {
       // https://github.com/nuxt-modules/i18n/issues/3238#issuecomment-2672492536
       optimizeTranslationDirective: false
+    },
+
+    experimental: {
+      localeDetector: 'localeDetector.ts'
     }
   },
 
