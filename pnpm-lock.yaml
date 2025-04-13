@@ -21,17 +21,17 @@ importers:
         specifier: ^4.1.3
         version: 4.1.3(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
       '@trpc/client':
-        specifier: ^11.0.3
-        version: 11.0.3(@trpc/server@11.0.3(typescript@5.8.3))(typescript@5.8.3)
+        specifier: ^11.1.0
+        version: 11.1.0(@trpc/server@11.1.0(typescript@5.8.3))(typescript@5.8.3)
       '@trpc/server':
-        specifier: ^11.0.3
-        version: 11.0.3(typescript@5.8.3)
+        specifier: ^11.1.0
+        version: 11.1.0(typescript@5.8.3)
       '@vueuse/core':
         specifier: ^13.1.0
         version: 13.1.0(vue@3.5.13(typescript@5.8.3))
       better-auth:
-        specifier: ^1.2.5
-        version: 1.2.5(typescript@5.8.3)
+        specifier: ^1.2.6
+        version: 1.2.6
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -40,13 +40,13 @@ importers:
         version: 2.1.1
       drizzle-orm:
         specifier: ^0.41.0
-        version: 0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)
+        version: 0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)
       lucide-vue-next:
-        specifier: ^0.487.0
-        version: 0.487.0(vue@3.5.13(typescript@5.8.3))
+        specifier: ^0.488.0
+        version: 0.488.0(vue@3.5.13(typescript@5.8.3))
       nuxt:
         specifier: ^3.16.2
-        version: 3.16.2(@parcel/watcher@2.5.1)(@types/node@22.14.0)(db0@0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)))(drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1))(eslint@9.24.0(jiti@2.4.2))(ioredis@5.6.0)(lightningcss@1.29.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))(vue-tsc@2.2.8(typescript@5.8.3))(yaml@2.7.1)
+        version: 3.16.2(@parcel/watcher@2.5.1)(@types/node@22.14.0)(db0@0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)))(drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1))(eslint@9.24.0(jiti@2.4.2))(ioredis@5.6.0)(lightningcss@1.29.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))(vue-tsc@2.2.8(typescript@5.8.3))(yaml@2.7.1)
       pg:
         specifier: ^8.14.1
         version: 8.14.1
@@ -64,7 +64,7 @@ importers:
         version: 4.1.3
       trpc-nuxt:
         specifier: ^1.0.4
-        version: 1.0.4(@trpc/client@11.0.3(@trpc/server@11.0.3(typescript@5.8.3))(typescript@5.8.3))(@trpc/server@11.0.3(typescript@5.8.3))
+        version: 1.0.4(@trpc/client@11.1.0(@trpc/server@11.1.0(typescript@5.8.3))(typescript@5.8.3))(@trpc/server@11.1.0(typescript@5.8.3))
       tw-animate-css:
         specifier: ^1.2.5
         version: 1.2.5
@@ -94,8 +94,8 @@ importers:
         specifier: ^1.3.0
         version: 1.3.0(@vue/compiler-sfc@3.5.13)(eslint@9.24.0(jiti@2.4.2))(magicast@0.3.5)(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
       '@types/pg':
-        specifier: ^8.11.11
-        version: 8.11.11
+        specifier: ^8.11.12
+        version: 8.11.12
       drizzle-kit:
         specifier: ^0.30.6
         version: 0.30.6
@@ -103,8 +103,8 @@ importers:
         specifier: ^9.24.0
         version: 9.24.0(jiti@2.4.2)
       lint-staged:
-        specifier: ^15.5.0
-        version: 15.5.0
+        specifier: ^15.5.1
+        version: 15.5.1
       nuxi:
         specifier: ^3.24.1
         version: 3.24.1
@@ -1735,14 +1735,14 @@ packages:
     peerDependencies:
       vue: ^2.7.0 || ^3.0.0
 
-  '@trpc/client@11.0.3':
-    resolution: {integrity: sha512-nUhRo/Ml3LQzs2USs5pfquNqETEQOMS6o9IR30cwn32oj4NuXXSqe9UqUc3hIBALtVzcfg6mLK43hGQA9O3X/Q==}
+  '@trpc/client@11.1.0':
+    resolution: {integrity: sha512-Q3pL4p7AddxI/ZJTEFo1utKSdasDFjZPECIPsKDkthEt52k530JkYVltTdLkYFKrNWXKKBo8MN7NwchelczoRw==}
     peerDependencies:
-      '@trpc/server': 11.0.3
+      '@trpc/server': 11.1.0
       typescript: '>=5.7.2'
 
-  '@trpc/server@11.0.3':
-    resolution: {integrity: sha512-/qlaFITZ5a9OCI5mZiW94C8q9mr/wxCmb8GfP3k7VF9RuY4ql+M1UWrzS7xAj8bHekqG9PcR8qEWlOJ6NnXbQg==}
+  '@trpc/server@11.1.0':
+    resolution: {integrity: sha512-uAJ7ikejeujVkf53XFJ/0W8nr7bDjul+Szk5Rsepq97Hb/WS1RkRXdyX4KqAyCE9b1vDFCJVJwSxiIZdRtbTZQ==}
     peerDependencies:
       typescript: '>=5.7.2'
 
@@ -1774,8 +1774,8 @@ packages:
   '@types/parse-path@7.0.3':
     resolution: {integrity: sha512-LriObC2+KYZD3FzCrgWGv/qufdUy4eXrxcLgQMfYXgPbLIecKIsVBaQgUPmxSSLcjmYbDTQbMgr6qr6l/eb7Bg==}
 
-  '@types/pg@8.11.11':
-    resolution: {integrity: sha512-kGT1qKM8wJQ5qlawUrEkXgvMSXoV213KfMGXcwfDwUIfUHXqXYXOfS1nE1LINRJVVVx5wCm70XnFlMHaIcQAfw==}
+  '@types/pg@8.11.12':
+    resolution: {integrity: sha512-D8qPxnq0rgpvZPYwMxAZffxvlk2mtgimLC5kos8uM7+3wPKfTESxtpD49cfB5w1UnodZL7oYnjFHT5+cB3Gw9Q==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -2172,11 +2172,11 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  better-auth@1.2.5:
-    resolution: {integrity: sha512-Tz2aKImkvaT7P9qHQ67Vhw/Slo6zpvE0jG7GoDQM+dd5tWuC3lP0OGjjWkNCZdToVlWB193i5nSHeZT90sFqEw==}
+  better-auth@1.2.6:
+    resolution: {integrity: sha512-RVy6nfNCXpohx49zP2ChUO3zN0nvz5UXuETJIhWU+dshBKpFMk4P4hAQauM3xqTJdd9hfeB5y+segmG1oYGTJQ==}
 
-  better-call@1.0.5:
-    resolution: {integrity: sha512-rAT73GWIJ8LbSP8Y3BdJnY1hwAiQPRRmUJ4R3YVhcVGS927l3eTXG5o5TD6Bv6je6ygjdx6iVq3/BU49eGUCHg==}
+  better-call@1.0.8:
+    resolution: {integrity: sha512-/PV8JLqDRUN7JyBPbklVsS/8E4SO3pnf8hbpa8B7xrBrr+BBYpeOAxoqtnsyk/pRs35vNB4MZx8cn9dBuNlLDA==}
 
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
@@ -3505,8 +3505,8 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  lint-staged@15.5.0:
-    resolution: {integrity: sha512-WyCzSbfYGhK7cU+UuDDkzUiytbfbi0ZdPy2orwtM75P3WTtQBzmG40cCxIa8Ii2+XjfxzLH6Be46tUfWS85Xfg==}
+  lint-staged@15.5.1:
+    resolution: {integrity: sha512-6m7u8mue4Xn6wK6gZvSCQwBvMBR36xfY24nF5bMTf2MHDYG6S3yhJuOgdYVw99hsjyDt2d4z168b3naI8+NWtQ==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -3583,8 +3583,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-vue-next@0.487.0:
-    resolution: {integrity: sha512-ilVgu9EHkfId7WSjmoPkzp13cuzpSGO5J16AmltjRHFoj6MlCBGY8BzsBU/ISKVlDheUxM+MsIYjNo/1hSEa6w==}
+  lucide-vue-next@0.488.0:
+    resolution: {integrity: sha512-Za02FzR1r+XN2oxOQerH7HvZwLJz27qPfzbauYzphtewy1g59Bm2DraVS5Sb9iHcIe3Pqf8cTVufvpwqAKlsew==}
     peerDependencies:
       vue: '>=3.0.1'
 
@@ -4861,14 +4861,6 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
-
-  valibot@1.0.0-beta.15:
-    resolution: {integrity: sha512-BKy8XosZkDHWmYC+cJG74LBzP++Gfntwi33pP3D3RKztz2XV9jmFWnkOi21GoqARP8wAWARwhV6eTr1JcWzjGw==}
-    peerDependencies:
-      typescript: '>=5'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
 
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
@@ -6783,12 +6775,12 @@ snapshots:
       '@tanstack/virtual-core': 3.13.6
       vue: 3.5.13(typescript@5.8.3)
 
-  '@trpc/client@11.0.3(@trpc/server@11.0.3(typescript@5.8.3))(typescript@5.8.3)':
+  '@trpc/client@11.1.0(@trpc/server@11.1.0(typescript@5.8.3))(typescript@5.8.3)':
     dependencies:
-      '@trpc/server': 11.0.3(typescript@5.8.3)
+      '@trpc/server': 11.1.0(typescript@5.8.3)
       typescript: 5.8.3
 
-  '@trpc/server@11.0.3(typescript@5.8.3)':
+  '@trpc/server@11.1.0(typescript@5.8.3)':
     dependencies:
       typescript: 5.8.3
 
@@ -6817,7 +6809,7 @@ snapshots:
 
   '@types/parse-path@7.0.3': {}
 
-  '@types/pg@8.11.11':
+  '@types/pg@8.11.12':
     dependencies:
       '@types/node': 22.14.0
       pg-protocol: 1.8.0
@@ -7302,7 +7294,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  better-auth@1.2.5(typescript@5.8.3):
+  better-auth@1.2.6:
     dependencies:
       '@better-auth/utils': 0.2.4
       '@better-fetch/fetch': 1.1.18
@@ -7310,17 +7302,14 @@ snapshots:
       '@noble/hashes': 1.7.1
       '@simplewebauthn/browser': 13.1.0
       '@simplewebauthn/server': 13.1.1
-      better-call: 1.0.5
+      better-call: 1.0.8
       defu: 6.1.4
       jose: 5.10.0
       kysely: 0.27.6
       nanostores: 0.11.4
-      valibot: 1.0.0-beta.15(typescript@5.8.3)
       zod: 3.24.2
-    transitivePeerDependencies:
-      - typescript
 
-  better-call@1.0.5:
+  better-call@1.0.8:
     dependencies:
       '@better-fetch/fetch': 1.1.18
       rou3: 0.5.1
@@ -7648,9 +7637,9 @@ snapshots:
 
   dargs@8.1.0: {}
 
-  db0@0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)):
+  db0@0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)):
     optionalDependencies:
-      drizzle-orm: 0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)
+      drizzle-orm: 0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)
 
   de-indent@1.0.2: {}
 
@@ -7741,9 +7730,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1):
+  drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1):
     optionalDependencies:
-      '@types/pg': 8.11.11
+      '@types/pg': 8.11.12
       gel: 2.0.1
       kysely: 0.27.6
       pg: 8.14.1
@@ -8590,7 +8579,7 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  lint-staged@15.5.0:
+  lint-staged@15.5.1:
     dependencies:
       chalk: 5.4.1
       commander: 13.1.0
@@ -8691,7 +8680,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-vue-next@0.487.0(vue@3.5.13(typescript@5.8.3)):
+  lucide-vue-next@0.488.0(vue@3.5.13(typescript@5.8.3)):
     dependencies:
       vue: 3.5.13(typescript@5.8.3)
 
@@ -8791,7 +8780,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  nitropack@2.11.8(drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)):
+  nitropack@2.11.8(drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.4.0
       '@netlify/functions': 3.0.4
@@ -8813,7 +8802,7 @@ snapshots:
       cookie-es: 2.0.0
       croner: 9.0.0
       crossws: 0.3.4
-      db0: 0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1))
+      db0: 0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1))
       defu: 6.1.4
       destr: 2.0.3
       dot-prop: 9.0.0
@@ -8859,7 +8848,7 @@ snapshots:
       unenv: 2.0.0-rc.15
       unimport: 4.1.3
       unplugin-utils: 0.2.4
-      unstorage: 1.15.0(db0@0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)))(ioredis@5.6.0)
+      unstorage: 1.15.0(db0@0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)))(ioredis@5.6.0)
       untyped: 2.0.0
       unwasm: 0.3.9
       youch: 4.1.0-beta.6
@@ -8936,7 +8925,7 @@ snapshots:
 
   nuxi@3.24.1: {}
 
-  nuxt@3.16.2(@parcel/watcher@2.5.1)(@types/node@22.14.0)(db0@0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)))(drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1))(eslint@9.24.0(jiti@2.4.2))(ioredis@5.6.0)(lightningcss@1.29.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))(vue-tsc@2.2.8(typescript@5.8.3))(yaml@2.7.1):
+  nuxt@3.16.2(@parcel/watcher@2.5.1)(@types/node@22.14.0)(db0@0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)))(drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1))(eslint@9.24.0(jiti@2.4.2))(ioredis@5.6.0)(lightningcss@1.29.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))(vue-tsc@2.2.8(typescript@5.8.3))(yaml@2.7.1):
     dependencies:
       '@nuxt/cli': 3.24.0(magicast@0.3.5)
       '@nuxt/devalue': 2.0.2
@@ -8973,7 +8962,7 @@ snapshots:
       mlly: 1.7.4
       mocked-exports: 0.1.1
       nanotar: 0.2.0
-      nitropack: 2.11.8(drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1))
+      nitropack: 2.11.8(drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1))
       nypm: 0.6.0
       ofetch: 1.4.1
       ohash: 2.0.11
@@ -8995,7 +8984,7 @@ snapshots:
       unimport: 4.1.3
       unplugin: 2.2.2
       unplugin-vue-router: 0.12.0(vue-router@4.5.0(vue@3.5.13(typescript@5.8.3)))(vue@3.5.13(typescript@5.8.3))
-      unstorage: 1.15.0(db0@0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)))(ioredis@5.6.0)
+      unstorage: 1.15.0(db0@0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)))(ioredis@5.6.0)
       untyped: 2.0.0
       vue: 3.5.13(typescript@5.8.3)
       vue-bundle-renderer: 2.1.1
@@ -9965,10 +9954,10 @@ snapshots:
 
   tr46@0.0.3: {}
 
-  trpc-nuxt@1.0.4(@trpc/client@11.0.3(@trpc/server@11.0.3(typescript@5.8.3))(typescript@5.8.3))(@trpc/server@11.0.3(typescript@5.8.3)):
+  trpc-nuxt@1.0.4(@trpc/client@11.1.0(@trpc/server@11.1.0(typescript@5.8.3))(typescript@5.8.3))(@trpc/server@11.1.0(typescript@5.8.3)):
     dependencies:
-      '@trpc/client': 11.0.3(@trpc/server@11.0.3(typescript@5.8.3))(typescript@5.8.3)
-      '@trpc/server': 11.0.3(typescript@5.8.3)
+      '@trpc/client': 11.1.0(@trpc/server@11.1.0(typescript@5.8.3))(typescript@5.8.3)
+      '@trpc/server': 11.1.0(typescript@5.8.3)
       h3: 1.15.1
       ofetch: 1.4.1
       ohash: 2.0.11
@@ -10094,7 +10083,7 @@ snapshots:
       '@unrs/resolver-binding-win32-ia32-msvc': 1.3.3
       '@unrs/resolver-binding-win32-x64-msvc': 1.3.3
 
-  unstorage@1.15.0(db0@0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)))(ioredis@5.6.0):
+  unstorage@1.15.0(db0@0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1)))(ioredis@5.6.0):
     dependencies:
       anymatch: 3.1.3
       chokidar: 4.0.3
@@ -10105,7 +10094,7 @@ snapshots:
       ofetch: 1.4.1
       ufo: 1.5.4
     optionalDependencies:
-      db0: 0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.11)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1))
+      db0: 0.3.1(drizzle-orm@0.41.0(@types/pg@8.11.12)(gel@2.0.1)(kysely@0.27.6)(pg@8.14.1))
       ioredis: 5.6.0
 
   untun@0.1.3:
@@ -10144,10 +10133,6 @@ snapshots:
       punycode: 2.3.1
 
   util-deprecate@1.0.2: {}
-
-  valibot@1.0.0-beta.15(typescript@5.8.3):
-    optionalDependencies:
-      typescript: 5.8.3
 
   validate-npm-package-license@3.0.4:
     dependencies:
