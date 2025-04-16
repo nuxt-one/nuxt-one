@@ -1,15 +1,30 @@
-<p align="center">
- <img align="center" src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/logo.png" height="70" alt="logo"/>
- <h1 align="center">Nuxt One</h1>
-</p>
+# Nuxt One
 
 The best way to start a full-stack, typesafe Nuxt.js app.
 
 ![hero](https://cdn.jsdelivr.net/gh/easy-temps/easy-static/og.png)
 
-## Documentation
+📖 Documentation, coming soon.
 
-Coming soon ~
+## Quick Start
+
+1. Create a project
+
+  ```bash
+  npx nuxi@latest init -t github:easy-temps/nuxt-one
+  ```
+
+2. Navigating to the Project Directory
+
+  ```bash
+  cd [project-name]
+  ```
+
+3. Start dev server
+
+  ```bash
+  pnpm dev
+  ```
 
 ## Stacks
 
