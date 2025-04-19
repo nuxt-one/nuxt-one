@@ -9,7 +9,7 @@ import DarkModeToggle from '~/components/DarkModeToggle.vue'
 
 const { t } = useI18n()
 const { $trpc } = useNuxtApp()
-const session = authClient.useSession()
+const { data: session } = await authClient.useSession(useFetch)
 
 const loading = ref(false)
 const postTitle = ref('')
@@ -55,7 +55,7 @@ function handleLogout() {
 }
 
 watchEffect(() => {
-  if (session.value?.data) {
+  if (session.value?.user) {
     handleFetchPost()
   }
   else {
@@ -112,10 +112,10 @@ watchEffect(() => {
 
       <div class="text-center mb-4">
         <div
-          v-if="session?.data"
+          v-if="session"
           class="mb-4"
         >
-          <p>{{ t('welcome') }} {{ session?.data?.user?.name }}</p>
+          <p>{{ t('welcome') }} {{ session?.user?.name }}</p>
 
           <Button
             class="mt-2 border py-2 px-6 rounded-full transition"
@@ -139,7 +139,7 @@ watchEffect(() => {
       </div>
 
       <div
-        v-if="session?.data"
+        v-if="session"
         class="w-full max-w-md"
       >
         <p class="mb-2">
