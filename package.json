@@ -1,7 +1,7 @@
 {
   "name": "nuxt-one",
   "type": "module",
-  "packageManager": "pnpm@10.8.1",
+  "packageManager": "pnpm@10.10.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -23,24 +23,24 @@
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/i18n": "^9.5.3",
     "@tailwindcss/vite": "^4.1.4",
-    "@trpc/client": "^11.1.0",
-    "@trpc/server": "^11.1.0",
+    "@trpc/client": "^11.1.2",
+    "@trpc/server": "^11.1.2",
     "@vueuse/core": "^13.1.0",
     "better-auth": "^1.2.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "drizzle-orm": "^0.42.0",
-    "lucide-vue-next": "^0.488.0",
-    "nuxt": "^3.16.2",
-    "pg": "^8.14.1",
+    "drizzle-orm": "^0.43.1",
+    "lucide-vue-next": "^0.503.0",
+    "nuxt": "^3.17.1",
+    "pg": "^8.15.6",
     "reka-ui": "^2.2.0",
-    "shadcn-nuxt": "^2.0.1",
+    "shadcn-nuxt": "^2.1.0",
     "tailwind-merge": "^3.2.0",
     "tailwindcss": "^4.1.4",
     "trpc-nuxt": "^1.0.5",
-    "tw-animate-css": "^1.2.5",
+    "tw-animate-css": "^1.2.8",
     "vue": "^3.5.13",
-    "zod": "^3.24.2"
+    "zod": "^3.24.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
@@ -49,36 +49,40 @@
     "@iconify-json/radix-icons": "^1.2.2",
     "@iconify/vue": "^4.3.0",
     "@nuxt/eslint": "^1.3.0",
-    "@types/pg": "^8.11.13",
+    "@types/pg": "^8.11.14",
     "drizzle-kit": "^0.31.0",
-    "eslint": "^9.24.0",
+    "eslint": "^9.25.1",
     "lint-staged": "^15.5.1",
-    "nuxi": "^3.24.1",
-    "simple-git-hooks": "^2.12.1",
+    "nuxi": "^3.25.0",
+    "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3",
-    "vue-tsc": "^2.2.8"
+    "vue-tsc": "^2.2.10"
   },
   "pnpm": {
     "peerDependencyRules": {
-      "allowedVersions": {
-        "vue-tsc": "^2.2.8"
-      }
+      "allowedVersions": {}
     },
     "allowedDeprecatedVersions": {
       "glob": "*",
       "inflight": "1",
       "@esbuild-kit/core-utils": "3",
-      "@esbuild-kit/esm-loader": "2"
+      "@esbuild-kit/esm-loader": "2",
+      "are-we-there-yet": "2",
+      "gauge": "3",
+      "node-domexception": "1",
+      "npmlog": "5",
+      "rimraf": "3"
     },
     "onlyBuiltDependencies": [
       "@parcel/watcher",
       "esbuild",
       "simple-git-hooks",
+      "unrs-resolver",
       "vue-demi"
     ]
   },
   "resolutions": {
-    "vite": "^6.2.6"
+    "vite": "^6.3.3"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
