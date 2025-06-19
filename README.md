@@ -4,7 +4,9 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 
 ![hero](https://cdn.jsdelivr.net/gh/easy-temps/easy-static/og.png)
 
-📖 Documentation, coming soon.
+📖 [Documentation](https://one-docs.netlify.app/)
+
+🌐 [Demo](https://www.one.devv.zone/)
 
 ## Quick Start
 

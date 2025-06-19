@@ -54,6 +54,14 @@ function handleLogout() {
   authClient.signOut()
 }
 
+function navigateToFirstSteps() {
+  window.open('https://one-docs.netlify.app/usage/first-steps', '_blank')
+}
+
+function navigateToIntroduction() {
+  window.open('https://one-docs.netlify.app/getting-started/introduction', '_blank')
+}
+
 watchEffect(() => {
   if (session.value?.user) {
     handleFetchPost()
@@ -81,7 +89,10 @@ watchEffect(() => {
       </h2>
 
       <div class="flex flex-col sm:flex-row w-full max-w-4xl gap-3 sm:gap-6 mb-6 sm:mb-16">
-        <Card class="p-2 sm:p-4 flex-1">
+        <Card
+          class="p-2 sm:p-4 flex-1 cursor-pointer hover:shadow-lg transition-shadow duration-200"
+          @click="navigateToFirstSteps"
+        >
           <CardHeader>
             <CardTitle class="text-lg sm:text-xl font-bold flex items-center">
               {{ t('firstSteps') }}
@@ -95,7 +106,10 @@ watchEffect(() => {
           </CardContent>
         </Card>
 
-        <Card class="p-2 sm:p-4 flex-1">
+        <Card
+          class="p-2 sm:p-4 flex-1 cursor-pointer hover:shadow-lg transition-shadow duration-200"
+          @click="navigateToIntroduction"
+        >
           <CardHeader>
             <CardTitle class="text-lg sm:text-xl font-bold flex items-center">
               {{ t('documentation') }}
