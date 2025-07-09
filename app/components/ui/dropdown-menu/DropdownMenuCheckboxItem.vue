@@ -1,13 +1,9 @@
 <script setup lang="ts">
 import { Check } from 'lucide-vue-next'
-import {
-  DropdownMenuCheckboxItem,
-  type DropdownMenuCheckboxItemEmits,
-  type DropdownMenuCheckboxItemProps,
-  DropdownMenuItemIndicator,
-  useForwardPropsEmits
-} from 'reka-ui'
-import { computed, type HTMLAttributes } from 'vue'
+import { DropdownMenuCheckboxItem, DropdownMenuItemIndicator, useForwardPropsEmits } from 'reka-ui'
+import type { DropdownMenuCheckboxItemEmits, DropdownMenuCheckboxItemProps } from 'reka-ui'
+import { computed } from 'vue'
+import type { HTMLAttributes } from 'vue'
 import { cn } from '@/lib/utils'
 
 const props = defineProps<DropdownMenuCheckboxItemProps & { class?: HTMLAttributes['class'] }>()

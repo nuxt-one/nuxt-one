@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import {
-  DropdownMenuContent,
-  type DropdownMenuContentEmits,
-  type DropdownMenuContentProps,
-  DropdownMenuPortal,
-  useForwardPropsEmits
-} from 'reka-ui'
-import { computed, type HTMLAttributes } from 'vue'
+import { DropdownMenuContent, DropdownMenuPortal, useForwardPropsEmits } from 'reka-ui'
+import type { DropdownMenuContentEmits, DropdownMenuContentProps } from 'reka-ui'
+import { computed } from 'vue'
+import type { HTMLAttributes } from 'vue'
 import { cn } from '@/lib/utils'
 
 const props = withDefaults(
