@@ -4,6 +4,8 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 
 ![hero](https://cdn.jsdelivr.net/gh/easy-temps/easy-static/og.png)
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/nuxtone/nuxt-one)
+
 📖 [Documentation](https://one-docs.netlify.app/)
 
 🌐 [Demo](https://www.one.devv.zone/)
