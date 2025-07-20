@@ -21,11 +21,7 @@ export default defineNuxtConfig({
     transpile: ['trpc-nuxt']
   },
 
-  future: {
-    compatibilityVersion: 4
-  },
-
-  compatibilityDate: '2025-01-21',
+  compatibilityDate: '2025-07-20',
 
   vite: {
     plugins: [
@@ -58,7 +54,6 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    lazy: true,
     locales: currentLocales,
     defaultLocale: 'zh-CN',
     strategy: 'no_prefix',
@@ -71,11 +66,6 @@ export default defineNuxtConfig({
 
     // Relative to the i18n directory
     vueI18n: './i18n.config.ts',
-
-    bundle: {
-      // https://github.com/nuxt-modules/i18n/issues/3238#issuecomment-2672492536
-      optimizeTranslationDirective: false
-    },
 
     experimental: {
       localeDetector: 'localeDetector.ts'
