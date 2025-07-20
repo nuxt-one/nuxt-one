@@ -20,7 +20,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "commitlint": "commitlint --edit",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "release": "bumpp --commit --push --tag"
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.5.2",
@@ -53,6 +54,7 @@
     "@iconify/vue": "^5.0.0",
     "@nuxt/eslint": "^1.6.0",
     "@types/pg": "^8.15.4",
+    "bumpp": "^10.2.0",
     "drizzle-kit": "^0.31.4",
     "eslint": "^9.31.0",
     "lint-staged": "^16.1.2",
