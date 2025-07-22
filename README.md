@@ -15,7 +15,7 @@ The best way to start a full-stack, typesafe Nuxt.js app.
 1. Create a project
 
   ```bash
-  npx nuxi@latest init -t github:easy-temps/nuxt-one
+  npx nuxi@latest init -t github:nuxt-one/nuxt-one
   ```
 
 2. Navigating to the Project Directory
