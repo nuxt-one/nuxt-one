@@ -26,40 +26,40 @@
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/i18n": "^10.0.3",
-    "@tailwindcss/vite": "^4.1.11",
+    "@nuxtjs/i18n": "^10.0.5",
+    "@tailwindcss/vite": "^4.1.12",
     "@trpc/client": "^11.4.4",
     "@trpc/server": "^11.4.4",
     "@vueuse/core": "^13.6.0",
-    "better-auth": "^1.3.4",
+    "better-auth": "^1.3.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.44.4",
-    "lucide-vue-next": "^0.536.0",
+    "lucide-vue-next": "^0.539.0",
     "nuxt": "^4.0.3",
     "pg": "^8.16.3",
     "reka-ui": "^2.4.1",
     "shadcn-nuxt": "^2.2.0",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^4.1.12",
     "trpc-nuxt": "^1.2.0",
     "tw-animate-css": "^1.3.6",
     "vue": "^3.5.18",
-    "zod": "^4.0.15"
+    "zod": "^4.0.17"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@commitlint/types": "^19.8.1",
-    "@iconify-json/radix-icons": "^1.2.2",
+    "@iconify-json/radix-icons": "^1.2.4",
     "@iconify/vue": "^5.0.0",
     "@nuxt/eslint": "^1.8.0",
     "@types/pg": "^8.15.5",
-    "bumpp": "^10.2.2",
+    "bumpp": "^10.2.3",
     "drizzle-kit": "^0.31.4",
-    "eslint": "^9.32.0",
-    "lint-staged": "^16.1.4",
-    "nuxi": "^3.27.0",
+    "eslint": "^9.33.0",
+    "lint-staged": "^16.1.5",
+    "nuxi": "^3.28.0",
     "simple-git-hooks": "^2.13.1",
     "typescript": "^5.9.2",
     "vue-tsc": "^3.0.5"
@@ -93,7 +93,7 @@
     ]
   },
   "resolutions": {
-    "vite": "^7.0.6"
+    "vite": "^7.1.2"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
