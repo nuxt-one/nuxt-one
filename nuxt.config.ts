@@ -25,6 +25,7 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [
+      // @ts-expect-error Vite plugin type is not properly typed
       tailwindcss()
     ],
     build: {
