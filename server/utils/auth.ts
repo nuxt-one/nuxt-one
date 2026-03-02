@@ -1,5 +1,5 @@
-import { betterAuth } from 'better-auth'
-import { drizzleAdapter } from 'better-auth/adapters/drizzle'
+import { drizzleAdapter } from '@better-auth/drizzle-adapter'
+import { betterAuth } from 'better-auth/minimal'
 import * as schema from '../database/schema'
 import { db } from './db'
 
