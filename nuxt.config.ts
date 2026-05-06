@@ -25,7 +25,6 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [
-      // @ts-expect-error Vite plugin type is not properly typed
       tailwindcss()
     ],
     build: {
@@ -33,7 +32,7 @@ export default defineNuxtConfig({
     },
     optimizeDeps: {
       include: [
-        'lucide-vue-next',
+        '@lucide/vue',
         '@iconify/vue',
         '@vueuse/core',
         'clsx',

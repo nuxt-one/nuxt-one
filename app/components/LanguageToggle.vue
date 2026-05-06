@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Languages } from 'lucide-vue-next'
+import { Languages } from '@lucide/vue'
 import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { User2, ArrowRight } from 'lucide-vue-next'
+import { User2, ArrowRight } from '@lucide/vue'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { authClient } from '@/lib/auth-client'
