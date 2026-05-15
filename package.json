@@ -2,9 +2,9 @@
   "name": "nuxt-one",
   "type": "module",
   "version": "0.1.2",
-  "packageManager": "pnpm@10.33.3",
+  "packageManager": "pnpm@11.1.2",
   "engines": {
-    "node": ">=20.19.0"
+    "node": ">=22.22.0"
   },
   "scripts": {
     "build": "nuxt build",
@@ -26,77 +26,48 @@
     "shadcn-vue": "shadcn-vue"
   },
   "dependencies": {
-    "@better-auth/drizzle-adapter": "^1.6.9",
-    "@lucide/vue": "^1.14.0",
+    "@better-auth/drizzle-adapter": "^1.6.11",
+    "@lucide/vue": "^1.16.0",
     "@nuxtjs/color-mode": "^4.0.0",
     "@nuxtjs/i18n": "^10.3.0",
-    "@tailwindcss/vite": "^4.2.4",
+    "@tailwindcss/vite": "^4.3.0",
     "@trpc/client": "^11.17.0",
     "@trpc/server": "^11.17.0",
     "@vueuse/core": "^14.3.0",
-    "better-auth": "^1.6.9",
+    "better-auth": "^1.6.11",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.45.2",
-    "nuxt": "^4.4.4",
+    "nuxt": "^4.4.5",
     "pg": "^8.20.0",
     "reka-ui": "^2.9.7",
-    "tailwind-merge": "^3.5.0",
-    "tailwindcss": "^4.2.4",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.3.0",
     "trpc-nuxt": "^2.0.2",
     "tw-animate-css": "^1.4.0",
     "vue": "^3.5.34",
     "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.5.3",
-    "@commitlint/config-conventional": "^20.5.3",
-    "@commitlint/types": "^20.5.0",
+    "@commitlint/cli": "^21.0.1",
+    "@commitlint/config-conventional": "^21.0.1",
+    "@commitlint/types": "^21.0.1",
     "@iconify-json/radix-icons": "^1.2.6",
     "@iconify/vue": "^5.0.1",
     "@nuxt/eslint": "^1.15.2",
     "@types/pg": "^8.20.0",
-    "bumpp": "^11.0.1",
+    "bumpp": "^11.1.0",
     "drizzle-kit": "^0.31.10",
     "eslint": "^10.3.0",
-    "lint-staged": "^16.4.0",
-    "nuxi": "^3.35.1",
-    "shadcn-nuxt": "^2.6.2",
+    "lint-staged": "^17.0.4",
+    "nuxi": "^3.35.2",
+    "shadcn-nuxt": "^2.7.3",
     "simple-git-hooks": "^2.13.1",
     "typescript": "^6.0.3",
-    "vue-tsc": "^3.2.8"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "allowedVersions": {
-        "citty": "0.2.1",
-        "eslint": "10.*",
-        "magicast": "0.5.2"
-      }
-    },
-    "allowedDeprecatedVersions": {
-      "glob": "*",
-      "@esbuild-kit/core-utils": "3",
-      "@esbuild-kit/esm-loader": "2",
-      "git-raw-commits": "4",
-      "node-domexception": "1",
-      "unplugin-vue-router": "*"
-    },
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "@tailwindcss/oxide",
-      "esbuild",
-      "simple-git-hooks",
-      "unrs-resolver",
-      "vue-demi"
-    ],
-    "ignoredBuiltDependencies": [
-      "@prisma/engines",
-      "prisma"
-    ]
+    "vue-tsc": "^3.2.9"
   },
   "resolutions": {
-    "vite": "^8.0.10"
+    "vite": "^8.0.12"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
