@@ -4,3 +4,12 @@ allowBuilds:
   simple-git-hooks: true
   unrs-resolver: true
   vue-demi: true
+
+allowedDeprecatedVersions:
+  glob: 10.5.0
+  '@esbuild-kit/core-utils': 3.3.2 
+  '@esbuild-kit/esm-loader': 2.6.5
+
+updateConfig:
+  ignoreDependencies:
+    - typescript
