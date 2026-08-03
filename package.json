@@ -2,10 +2,10 @@
   "name": "nuxt-one",
   "type": "module",
   "version": "0.1.2",
-  "packageManager": "pnpm@11.15.0",
+  "packageManager": "pnpm@11.18.0",
   "engines": {
-    "node": ">=22.22.0",
-    "pnpm": ">=11.15.0"
+    "node": ">=22.23.0",
+    "pnpm": ">=11.18.0"
   },
   "scripts": {
     "build": "nuxt build",
@@ -27,19 +27,19 @@
     "shadcn-vue": "shadcn-vue"
   },
   "dependencies": {
-    "@better-auth/drizzle-adapter": "^1.6.23",
-    "@lucide/vue": "^1.25.0",
+    "@better-auth/drizzle-adapter": "^1.6.25",
+    "@lucide/vue": "^1.28.0",
     "@nuxtjs/color-mode": "^4.0.1",
-    "@nuxtjs/i18n": "^10.4.1",
+    "@nuxtjs/i18n": "^10.6.0",
     "@tailwindcss/vite": "^4.3.3",
     "@trpc/client": "^11.18.0",
     "@trpc/server": "^11.18.0",
-    "@vueuse/core": "^14.3.0",
-    "better-auth": "^1.6.23",
+    "@vueuse/core": "^14.4.0",
+    "better-auth": "^1.6.25",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.45.2",
-    "nuxt": "^4.5.0",
+    "nuxt": "^4.5.1",
     "pg": "^8.22.0",
     "reka-ui": "^2.10.1",
     "tailwind-merge": "^3.6.0",
@@ -56,16 +56,16 @@
     "@iconify-json/radix-icons": "^1.2.6",
     "@iconify/vue": "^5.0.1",
     "@nuxt/eslint": "^1.16.0",
-    "@types/pg": "^8.20.0",
-    "bumpp": "^11.1.0",
+    "@types/pg": "^8.20.3",
+    "bumpp": "^12.1.1",
     "drizzle-kit": "^0.31.10",
-    "eslint": "^10.7.0",
-    "lint-staged": "^17.1.0",
+    "eslint": "^10.8.0",
+    "lint-staged": "^17.3.0",
     "nuxi": "^3.37.0",
-    "shadcn-nuxt": "^2.8.0",
+    "shadcn-nuxt": "^2.8.1",
     "simple-git-hooks": "^2.13.1",
     "typescript": "^6.0.3",
-    "vue-tsc": "^3.3.7"
+    "vue-tsc": "^3.3.9"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
